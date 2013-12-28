@@ -1,0 +1,43 @@
+{
+  "name": "gulp-esformatter",
+  "version": "0.0.0",
+  "description": "Beautify JavaScript code with esformatter",
+  "license": "MIT",
+  "repository": "sindresorhus/gulp-esformatter",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "javascript",
+    "ecmascript",
+    "js",
+    "code",
+    "style",
+    "conventions",
+    "ast",
+    "format",
+    "formatter",
+    "beautify",
+    "beautifier"
+  ],
+  "dependencies": {
+    "gulp-util": "~2.2.0",
+    "event-stream": "~3.0.20",
+    "esformatter": "0.0.15"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
