@@ -2,7 +2,7 @@
 
 > Beautify JavaScript code with [esformatter](https://github.com/millermedeiros/esformatter)
 
-*Issues with the output should be reported on the [esformatter issue tracker](https://github.com/millermedeiros/esformatter/issues).*
+*Issues with the output should be reported on the esformatter [issue tracker](https://github.com/millermedeiros/esformatter/issues).*
 
 
 ## Install
@@ -23,7 +23,7 @@ var esformatter = require('gulp-esformatter');
 gulp.task('default', function () {
 	gulp.src('src/app.js')
 		.pipe(esformatter({indent: {value: '  '}}))
-		.pipe(gulp.dest('dist/app.js'));
+		.pipe(gulp.dest('dist'));
 });
 ```
 
