@@ -35,7 +35,7 @@
   "dependencies": {
     "gulp-util": "~2.2.0",
     "through2": "~0.4.0",
-    "esformatter": "0.0.15"
+    "esformatter": "0.0.x"
   },
   "devDependencies": {
     "mocha": "*"
