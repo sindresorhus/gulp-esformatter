@@ -33,9 +33,9 @@
     "beautifier"
   ],
   "dependencies": {
-    "gulp-util": "~2.2.0",
-    "through2": "~0.4.0",
-    "esformatter": "0.0.15"
+    "gulp-util": "^2.2.0",
+    "through2": "^0.4.0",
+    "esformatter": "^0.0.16"
   },
   "devDependencies": {
     "mocha": "*"
