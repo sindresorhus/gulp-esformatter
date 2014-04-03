@@ -1,4 +1,4 @@
-# [gulp](https://github.com/wearefractal/gulp)-esformatter [![Build Status](https://secure.travis-ci.org/sindresorhus/gulp-esformatter.png?branch=master)](http://travis-ci.org/sindresorhus/gulp-esformatter)
+# [gulp](http://gulpjs.com)-esformatter [![Build Status](https://travis-ci.org/sindresorhus/gulp-esformatter.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-esformatter)
 
 > Beautify JavaScript code with [esformatter](https://github.com/millermedeiros/esformatter)
 
@@ -7,14 +7,12 @@
 
 ## Install
 
-Install with [npm](https://npmjs.org/package/gulp-esformatter)
-
-```
-npm install --save-dev gulp-esformatter
+```bash
+$ npm install --save-dev gulp-esformatter
 ```
 
 
-## Example
+## Usage
 
 ```js
 var gulp = require('gulp');
@@ -37,4 +35,4 @@ See the esformatter [options](https://github.com/millermedeiros/esformatter#esfo
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
