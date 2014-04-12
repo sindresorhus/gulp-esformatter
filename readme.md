@@ -19,7 +19,7 @@ var gulp = require('gulp');
 var esformatter = require('gulp-esformatter');
 
 gulp.task('default', function () {
-	gulp.src('src/app.js')
+	return gulp.src('src/app.js')
 		.pipe(esformatter({indent: {value: '  '}}))
 		.pipe(gulp.dest('dist'));
 });
