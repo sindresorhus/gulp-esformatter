@@ -16,7 +16,7 @@ module.exports = function (options) {
 		}
 
 		try {
-			file.contents = new Buffer(esformatter.format(file.contents.toString(), options));
+			file.contents = new Buffer(esformatter.format(file.contents.toString(), esformatter.rc(file.path, options)));
 		} catch (err) {
 			this.emit('error', new gutil.PluginError('gulp-esformatter', err));
 		}
