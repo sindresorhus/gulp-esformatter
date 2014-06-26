@@ -32,6 +32,8 @@ gulp.task('default', function () {
 
 See the esformatter [options](https://github.com/millermedeiros/esformatter#esformatterformatstr-optsstring).
 
+Options are passed through [esformatter.rc()](https://github.com/millermedeiros/esformatter#esformatterrcfilepath-customoptionsobject).
+
 
 ## License
 
