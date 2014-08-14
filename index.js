@@ -6,22 +6,20 @@ var esformatter = require('esformatter');
 module.exports = function (options) {
 	return through.obj(function (file, enc, cb) {
 		if (file.isNull()) {
-			this.push(file);
-			return cb();
+			cb(null, file);
+			return;
 		}
 
 		if (file.isStream()) {
-			this.emit('error', new gutil.PluginError('gulp-esformatter', 'Streaming not supported'));
-			return cb();
+			cb(new gutil.PluginError('gulp-esformatter', 'Streaming not supported'));
+			return;
 		}
 
 		try {
 			file.contents = new Buffer(esformatter.format(file.contents.toString(), esformatter.rc(file.path, options)));
+			cb(null, file);
 		} catch (err) {
-			this.emit('error', new gutil.PluginError('gulp-esformatter', err, {fileName: file.path}));
+			cb(new gutil.PluginError('gulp-esformatter', err, {fileName: file.path}));
 		}
-
-		this.push(file);
-		cb();
 	});
 };

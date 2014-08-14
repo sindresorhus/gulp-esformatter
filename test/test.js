@@ -9,14 +9,17 @@ it('should format JS', function (cb) {
 		preset: 'jquery'
 	});
 
-	stream.on('data', function (file) {
+	stream.once('data', function (file) {
 		assert.equal(file.contents.toString(), 'var foo = [ 1, 2, 3 ]');
-		cb();
 	});
+
+	stream.on('end', cb);
 
 	stream.write(new gutil.File({
 		contents: new Buffer('var foo=[1,2,3]')
 	}));
+
+	stream.end();
 });
 
 it('should fetch .esformatter options from path', function (cb) {
@@ -24,11 +27,14 @@ it('should fetch .esformatter options from path', function (cb) {
 
 	stream.on('data', function (file) {
 		assert.equal(file.contents.toString(), 'var foo = [1,2,3]');
-		cb();
 	});
+
+	stream.on('end', cb);
 
 	stream.write(new gutil.File({
 		path: path.join(__dirname, '/foo.js'),
 		contents: new Buffer('var foo=[1,2,3]')
 	}));
+
+	stream.end();
 });
