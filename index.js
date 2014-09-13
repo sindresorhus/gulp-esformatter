@@ -4,6 +4,10 @@ var through = require('through2');
 var esformatter = require('esformatter');
 
 module.exports = function (options) {
+	var plugins = Array.prototype.slice.call(arguments, 1);
+	plugins.forEach(function(plugin) {
+		esformatter.register(plugin);
+	});
 	return through.obj(function (file, enc, cb) {
 		if (file.isNull()) {
 			cb(null, file);
