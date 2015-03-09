@@ -33,7 +33,7 @@
     "beautifier"
   ],
   "dependencies": {
-    "esformatter": "^0.4.1",
+    "esformatter": "^0.5.0",
     "gulp-util": "^3.0.0",
     "through2": "^0.6.1"
   },
