@@ -15,14 +15,14 @@ $ npm install --save-dev gulp-esformatter
 ## Usage
 
 ```js
-var gulp = require('gulp');
-var esformatter = require('gulp-esformatter');
+const gulp = require('gulp');
+const esformatter = require('gulp-esformatter');
 
-gulp.task('default', function () {
-	return gulp.src('src/app.js')
+gulp.task('default', () =>
+	gulp.src('src/app.js')
 		.pipe(esformatter({indent: {value: '  '}}))
-		.pipe(gulp.dest('dist'));
-});
+		.pipe(gulp.dest('dist'))
+);
 ```
 
 
@@ -32,9 +32,9 @@ gulp.task('default', function () {
 
 See the esformatter [options](https://github.com/millermedeiros/esformatter#esformatterformatstr-optsstring).
 
-Options are passed through [esformatter.rc()](https://github.com/millermedeiros/esformatter#esformatterrcfilepath-customoptionsobject).
+Options are passed to [`esformatter.rc()`](https://github.com/millermedeiros/esformatter#esformatterrcfilepath-customoptionsobject).
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
