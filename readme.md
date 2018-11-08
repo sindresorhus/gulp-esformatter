@@ -1,3 +1,9 @@
+# Deprecated
+
+The `esformatter` project is no longer maintained.
+
+---
+
 # gulp-esformatter [![Build Status](https://travis-ci.org/sindresorhus/gulp-esformatter.svg?branch=master)](https://travis-ci.org/sindresorhus/gulp-esformatter)
 
 > Beautify JavaScript code with [esformatter](https://github.com/millermedeiros/esformatter)
