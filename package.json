@@ -1,6 +1,6 @@
 {
 	"name": "gulp-esformatter",
-	"version": "7.0.0",
+	"version": "8.0.0",
 	"description": "Beautify JavaScript code with esformatter",
 	"license": "MIT",
 	"repository": "sindresorhus/gulp-esformatter",
